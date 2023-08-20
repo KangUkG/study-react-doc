@@ -1,28 +1,31 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-    "paths": {
-      "@/*": ["./*"]
-    }
-  },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+    "compilerOptions": {
+        "target": "es5", // ECMAScript 목표 버전 설정: 'ES3(default)', ...
+        "lib": ["dom", "dom.iterable", "esnext"], // 컴파일 과정에 사용될 라이브러리 파일 설정
+        "allowJs": true, // JavasScript 파일 컴파일 허용
+        "skipLibCheck": true, // 선언 파일 유형 검사 스킵
+        "strict": true, // 엄격하게 유형 검사
+        "forceConsistentCasingInFileNames": true, // 파일 이름 대소문자 판별
+        "noEmit": true, // 컴파일 시 js변환 파일 생성 여부
+        "esModuleInterop": true, //
+        "module": "esnext", // 생성될 모듈 코드 설정: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'
+        "moduleResolution": "Node", // 모듈 분석 방법 설정: 'node' (Node.js) 또는 'classic' (TypeScript pre-1.6).
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "incremental": true,
+        "plugins": [
+            {
+                "name": "next"
+            }
+        ],
+        "resolveJsonModule": true,
+        "baseUrl": "./",
+        "paths": {
+            "@components/*": ["components/*"],
+            "@markdown/*": ["markdown/*"],
+            "@/*": ["./*"],
+        }
+    },
+    "include": ["next-env.d.ts", "md.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+    "exclude": ["node_modules"]
 }
