@@ -35,3 +35,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 
 1. https://github.com/remarkjs/react-markdown
+2. https://react.dev/learn
+
