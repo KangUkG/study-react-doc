@@ -1,6 +1,6 @@
 "use client";
 
-import Markdown from "@components/detail/Markdown";
+import Markdown from "@markdown/core/Markdown";
 import type { NextPage } from "next";
 
 const Page: NextPage<{ params : { id: string; }}> = ({ params }) => {

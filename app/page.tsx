@@ -38,6 +38,24 @@ export default function Home() {
                                 adding-interactivity/responding-to-event
                             </Link>
                         </li>
+                        <li className="m-2">
+                            <Link
+                                href={"render-and-commit"}
+                                className="flex items-center gap-2 hover:underline"
+                            >
+                                <HiCursorArrowRays size={25} />
+                                adding-interactivity/render-and-commit
+                            </Link>
+                        </li>
+                        <li className="m-2">
+                            <Link
+                                href={"state-as-a-snapshot"}
+                                className="flex items-center gap-2 hover:underline"
+                            >
+                                <HiCursorArrowRays size={25} />
+                                adding-interactivity/state-as-a-snapshot
+                            </Link>
+                        </li>
                     </ul>
                 </Card>
                 <Test />
