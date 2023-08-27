@@ -8,11 +8,12 @@ const Header = () => {
 
     return (
         <>
-            <header className="w-full fixed h-32">
+            <header className="w-full fixed h-32 bg-slate-800">
                 <button
                     onClick={() => {
                         router.push("/");
                     }}
+                    className=""
                 >back</button>
             </header>
         </>

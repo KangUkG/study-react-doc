@@ -24,6 +24,22 @@ export default function Home() {
                         </li>
                     </ul>
                 </Card>
+                <Card className="bg-slate-100 hover:bg-slate-300">
+                    <h3 className="text-2xl font-bold pb-6 ">
+                        Adding interactivity 
+                    </h3>
+                    <ul>
+                        <li className="m-2">
+                            <Link
+                                href={"responding-to-event"}
+                                className="flex items-center gap-2 hover:underline"
+                            >
+                                <HiCursorArrowRays size={25} />
+                                adding-interactivity/responding-to-event
+                            </Link>
+                        </li>
+                    </ul>
+                </Card>
                 <Test />
                 <Test />
                 <Test />
