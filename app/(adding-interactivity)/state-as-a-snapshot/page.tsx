@@ -3,6 +3,7 @@ import Example from "@components/UI/Example";
 import Markdown from "@markdown/core/Markdown";
 import type { NextPage } from "next";
 
+// https://react.dev/learn/state-as-a-snapshot
 const Page: NextPage = () => {
 
     return (
